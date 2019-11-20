@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts
+
+###
+
+GET http://localhost:3000/posts/5dd31bc33a2bfb334c9c38d7
+
+###
+
+DELETE http://localhost:3000/posts/5dd31bc33a2bfb334c9c38d7
+
+###
+
+PATCH http://localhost:3000/posts/5dd31bc33a2bfb334c9c38d7
+Content-Type: application/json
+
+{
+    "title" : "2nd updated Title"
+}
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title":"my third post",
+    "text":"Hello World #3",
+    "author": "Mi Boy"
+}
